@@ -18,7 +18,6 @@ const login = async (req, res) => {
       };
       accessToken = await generateToken(payload);
       isUser.save();
-      res.cookie("user", accessToken);
       return res.status(201).json({ accessToken, payload });
     }
 
@@ -32,7 +31,6 @@ const login = async (req, res) => {
       isUser,
     };
     accessToken = await generateToken(payload);
-    res.cookie("user", accessToken);
     return res.status(200).json({ accessToken, payload });
   } catch (err) {
     return res.status(500).json({ message: "Internal server error" });
