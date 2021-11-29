@@ -11,3 +11,5 @@ This is the backend part of the task.
     In-memory databases are most commonly used in applications that demand very fast data access, storage and manipulation. databases like Redis, SQLite
 
 Link to deployed Site https://warehousebby.herokuapp.com/api/v1
+
+We have one admin set for this application with Fullname: "Admin" and Password: "admin@gmail.com" and Two workers Fullname: "Worker1" and Password: "worker1@gmail.com" and the other one Fullname: "Worker3" and Password: "Worker3@gmail.com"
